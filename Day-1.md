@@ -3,7 +3,7 @@ Seting Up
 - You can use ctrl+i to indent
 
 Taking input and output program
-----
+------------------------------------------------------------------
 package org.javatraining;
 import java.lang.*;
 import java.util.*;
@@ -17,10 +17,10 @@ public class First {
 		
 	}
 }
-------
+--------------------------------------------------------------------------
 
 Find sum and avg
-------
+----------------------------------------------------
 package org.javatraining;
 import java.lang.*;
 import java.util.*;
@@ -41,10 +41,10 @@ public class First {
 		
 	}
 }
-------
+---------------------------------------------------------------
 
 Program for Oops
-------------------
+--------------------------------------
 package org.javatraining;
 import java.util.*;
 public class Oops {
@@ -70,4 +70,4 @@ public class Oops {
 		obj.display();
 	}
 }
----------------------------
+---------------------------------------------------------
