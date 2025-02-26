@@ -1,2 +1,2 @@
 Seting Up
-- Create a new project > del module-java module from src
+- Create a new project > del module-info.java from src
