@@ -71,3 +71,44 @@ public class Oops {
 	}
 }
 ---------------------------------------------------------
+
+#Inheritence
+-------------------------------------------------------------------------------------
+package org.javatraining;
+import java.util.*;
+class studentClass {
+	int rollno;
+	String name,address;
+	public studentClass(int rollno, String name, String address) {
+		super();
+		this.rollno = rollno;
+		this.name = name;
+		this.address = address;
+	}
+	
+	void display() {
+		System.out.println("The roll no is "+rollno+"\tThe name is"+name+"\tThe address is "+address);
+	}
+}
+
+public class inheritence extends studentClass{
+	int phy,chem,total,avg;
+
+	public inheritence(int rollno, String name, String address, int phy, int chem) {
+		super(rollno, name, address); // Parent class constructor always works first
+		this.phy = phy;
+		this.chem = chem;
+		this.total = phy+chem;
+		this.avg = this.total/2;
+	}
+	void display() {
+		super.display();// accessing display of parent class
+		System.out.println("The phy : "+phy+"\t The chem "+chem+"\t The Total "+total+"\t The avg"+avg);
+	}
+	public static void main(String[] args) {
+		inheritence ob=new inheritence(11,"Mayank","Patiala",40,50);
+		ob.display();
+	}
+	
+}
+--------------------------------------------------------------------------------------------------------------------
