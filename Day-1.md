@@ -72,7 +72,7 @@ public class Oops {
 }
 ---------------------------------------------------------
 
-#Inheritence
+#Inheritence Single
 -------------------------------------------------------------------------------------
 package org.javatraining;
 import java.util.*;
@@ -112,3 +112,111 @@ public class inheritence extends studentClass{
 	
 }
 --------------------------------------------------------------------------------------------------------------------
+# Multiple Inheritence
+package org.javatraining;
+import java.util.*;
+
+class person{
+	int id;
+	String name;
+	
+	public person(int id, String name) {
+		this.id = id;
+		this.name = name;
+	}
+	
+	public void display() {
+		System.out.println("The Id is "+id);
+		System.out.println("The name is "+name);
+	}
+}
+
+class teacher extends person{
+	String subject,section;
+	
+	public teacher(int id,String name,String subject,String section) {
+		super(id,name);
+		this.subject = subject;
+		this.section = section;
+	}
+	
+	public void display() {
+		super.display();
+		System.out.println("The Subject is "+ subject);
+		System.out.println("The section is "+ section);
+	}
+}
+public class multiLevelInheritence extends teacher {
+	String school;
+
+	public multiLevelInheritence(int id, String name, String subject, String section, String school) {
+		super(id, name, subject, section);
+		this.school = school;
+	}
+	
+	public void display() {
+		super.display();
+		System.out.println("The School is "+school);
+	}
+	
+	public static void main(String args[]) {
+		multiLevelInheritence ob = new multiLevelInheritence(11,"Mayank","Java","13","TIET");
+		ob.display();
+	}
+}
+-------------------------------------------------------------------------------------------------------
+# Heirarchial Inheritence
+package org.javatraining;
+import java.util.*;
+
+class emp{
+	int id,Salary;
+	String name;
+	public emp(int id,String name,int  Salary) {
+		this.id=id;
+		this.name=name;
+	}
+	
+	public void display() {
+		System.out.println("The id is " + id);
+		System.out.println("The Name is "+name);
+	}
+}
+
+class Trainee extends  emp{
+	String skills;
+
+	public Trainee(int id, String name, int Salary, String skills) {
+		super(id, name, Salary);
+		this.skills = skills;
+	}
+	
+	public void display() {
+		super.display();
+		System.out.println("The Skills of Trainee are "+skills);
+	}
+}
+
+class Trainer extends emp{
+	int exp;
+	
+	public Trainer(int id,String name,int Salary,int exp) {
+		super(id,name,Salary);
+		this.exp = exp;
+	}
+	public void display() {
+		super.display();
+		System.out.println("The exp of the Trainer is "+exp);
+	}
+}
+
+public class heirarchialInheri {
+	public static void main(String args[]) {
+		Trainee t = new Trainee(11,"Mayank",15,"MERN");
+		t.display();
+		
+		Trainer t1 = new Trainer(101,"Sandip",50,20);
+		t1.display();
+	}
+}
+-------------------------------------------------------------------------------------------------------
