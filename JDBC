@@ -1,0 +1,3 @@
+1. Have to add a jar file       >> properties>java build path>libraries>classpath
+OR
+2. Use maven repo
