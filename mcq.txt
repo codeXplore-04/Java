@@ -1,0 +1,189 @@
+(A/An) ____________ is a contract in the form of a collection of method and constant declarations. When a class implements (a/an) ____________, it promises to implement all of the methods declared in that ____________.  Select the best word to complete this sentence. 
+
+---------------------------------------------------------------------------------------------------------------
+The phrase “is a” refers to the object-oriented concept of ____________, and the phrase “has a” refers to the object-oriented concept of ____________
+----------------------------------------------------------------------------------------
+RunTime Polymorphism is achieved by ______ 
+-----------------------------------------------------------------------------------------
+What makes a class abstract?
+--------------------------------------------------------------------------------------------
+The class at the top of exception class hierarchy is .................
+-------------------------------------------------------------------------------------------
+public class Test
+{
+public static void main(String args[])
+{               
+try
+{ 
+int i; 
+return;
+}catch(Exception e)
+{                     
+  System.out.print("inCatchBlock");
+}
+finally
+{
+System.out.println("inFinallyBlock");
+ }}}
+--------------------------------------------------------------------------------------------------------------
+ What is the output of this program?             
+ class output 
+{ 
+public static void main(String args[])
+{
+String c = "Hello i love java";
+boolean var;
+var =c.startsWith("hello");
+System.out.println(var); 
+}}
+------------------------------------------------------------------------------
+public class Test
+{public static void main(String args[])
+{
+int i;
+try
+{
+i = calculate();
+System.out.println(i);
+}
+catch(Exception e)
+{System.out.println("Error occured");
+} } 
+static int calculate()
+{
+ return (7/2);
+ }}
+---------------------------------------------------------------------------
+try
+{
+File f = new File("a.txt");}
+catch(Exception e){}
+catch(IOException io)
+{}
+-------------------------------------------------------------------------------------------
+public class Test
+{
+public static void main(String args[])
+{
+try
+{
+int a = Integer.parseInt("four");
+}}}
+-------------------------------------------------------------------------------------
+A property which is not true for classes is that they 
+-------------------------------------------------------------------------------
+The process of building new classes from existing one is called 
+-----------------------------------------------------------------------------------
+Data members which are static
+------------------------------------------------------------
+Exception handling is targeted at
+------------------------------------------------------------- 
+Which of the following is NOT a key component of object oriented programming?
+-------------------------------------------------------------------------------
+Which of these is TRUE of the relationship between objects and classes?
+----------------------------------------------------------
+The Java compiler translates source code into
+-----------------------------------------------------------------
+Which of the following is NOT a valid ‘type’ in Java?
+---------------------------------------------------------------------------
+Which of the following statements is NOT correct?
+-----------------------------------------------------------------------------
+What is the different forms of Polymorphism.
+--------------------------------------------------------------------
+What is true about method overloading.
+---------------------------------------------------------
+What is true about method overriding?
+-------------------------------------------------------
+What is true about an Interface
+----------------------------------------------------------
+Which statement is true for constructor
+-----------------------------------------------------------
+public class Test { }What is the prototype of the default constructor?
+-------------------------------------------------------------------------------------
+The return data type of void means?  
+-----------------------------------------------------------
+ Which statements are not correct about Objects?  
+-----------------------------------------------------------------------------
+ If an attribute is private, which methods have access to it? 
+----------------------------------------------------------------------------
+What is an aggregate object? 
+--------------------------------------------------------
+ A class can have many methods with the same name, as long as the number of parameters is different.  This is known as:  
+------------------------------------------------------------------------------------------
+  The process of building new classes from existing one is called ______. 
+---------------------------------------------------------------------------------
+If an array is declared as int a[4] = {3, 0, 1, 2}, then values assigned to a[0] & a[4] will be ________ 
+------------------------------------------------------------------------
+Mechanism of deriving a class from another derived class is known as____ 
+-------------------------------------------------------------------------
+RunTime Polymorphism is achieved by ______ 
+-------------------------------------------------------------------------------
+A property which is not true for classes is that they 
+-------------------------------------------------------------------------------------
+The process of building new classes from existing one is called 
+---------------------------------------------------------------------------------
+Data members which are static
+------------------------------------------------------------------------------
+Exception handling is targeted at 
+-----------------------------------------------------------------------------------------
+Which of the following is NOT a key component of object oriented programming?
+------------------------------------------------------------------------------------------------------
+Which of these is TRUE of the relationship between objects and classes?
+-----------------------------Answer-----------------------
+Interface
+Inheritance : Composition
+function Overriding 
+The class must not have method definitions.
+Throwable
+inFinallyBlock
+FALSE
+3
+Compilation Error
+NumberFormatException
+bring together all aspects of an entity in one place. 
+Inheritance.
+can only be used in static functions 
+Run-time error 
+Parallelism
+An object is an instance of a class.
+Byte code
+static
+We can use the new operator on int to create an "int" object.
+-------------------------------------------------------------
+Method overloading 
+Method overriding through inheritance 	
+Method overriding through the Java interface 
+--------------------------------------------------------------------
+Overloaded methods MUST change the argument list 	
+Overloaded methods CAN change the return type 	
+Overloaded methods CAN change the access modifier 
+------------------------------------------------------------------------------
+You can’t override a method marked public and make it protected. 
+You cannot override a method marked final 	
+You cannot override a method marked static 
+--------------------------------------------------------------------------
+You can’t mark an interface as final.
+Interface variables must be static. 	
+An Interface cannot extend anything but another interfaces
+----------------------------------------------------------------------------------
+A constructor has the same name as the class name	
+A constructor should not have a return type	
+A class can contain more than one constructor, So it can be overloaded
+---------------------------------------------------------------------------------------------
+
+Test( )
+No data type is returned.
+ Objects do not permit encapsulation
+Only those defined in the same class.
+An object instance that contains other objects.
+ Method Overloading
+Inheritance
+3, 0 
+Multilevel Inheritance 
+function Overriding 
+bring together all aspects of an entity in one place. 
+Inheritance.
+can only be used in static functions 
+Run-time error 
+Parallelism
+An object is an instance of a class.

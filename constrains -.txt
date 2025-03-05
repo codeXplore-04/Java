@@ -1,0 +1,71 @@
+constrains :-
+1)Primary key :- unique key + not null
+2)check :- it is used to check the value or condition.
+example:- age should be greater than 18 to vote
+3)default :- If you don't enter anything the default value will be taken.
+4)unique key:- in this we cannot enter duplicate value
+5)not null:- In this the value cannot be null.
+6)Foreign key:- It is a reference key to another table.
+-----------------------------------------------------------------------------------------------
+create table bank(accno int primary key,name varchar(30),balance float);
+-----------------------------------------------------------------------------------------------
+CREATE TABLE student1 (
+    Id INT PRIMARY KEY ,
+    name VARCHAR(255) NOT NULL,
+    Email VARCHAR(255) UNIQUE NOT NULL,
+    Phone VARCHAR(255) UNIQUE NOT NULL,
+    Address varchar(50),
+     Salary INT check (salary > 20000));
+
+-------------------------------------------------------------------------------------------------
+CREATE TABLE Persons11 (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    City varchar(255),
+    CONSTRAINT CHK_Person CHECK (Age>=18 AND City='Bangalore')
+);
+---------------------
+
+CREATE TABLE Persons12 (
+    ID int NOT NULL,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int,
+    City varchar(255) DEFAULT 'Bangalore'
+);
+----------------------------------------------------------------
+CREATE TABLE Orders13 (
+    ID int NOT NULL,
+    OrderNumber int NOT NULL,
+    OrderDate TIMESTAMP DEFAULT (now()));
+
+----------------------------------------------------------------------------
+Foreign key
+------------------------
+parent table or Master table
+-----------------------------------------------
+create table bank(accno int primary key, name varchar(30),balance float);
+------------------------------------------------------------------------------
+child table
+-------------------------
+CREATE TABLE bankcustomer (
+	accno int,
+    FOREIGN KEY (accno) REFERENCES bank(accno),
+    FirstName varchar(255),
+    Age int);
+----------------------------------------------------------------------------------
+CREATE TABLE bankcustomer (
+	accno int,
+    FOREIGN KEY (accno) REFERENCES bank(accno) ON DELETE CASCADE,
+
+    FirstName varchar(255),
+    Age int);
+-------------------------------------------------------------------
+CREATE TABLE bankcustomer (
+	accno int,
+    FOREIGN KEY (accno) REFERENCES bank(accno) ON update CASCADE,
+    FirstName varchar(255),
+    Age int);
+-------------------------------------------------------------------------
